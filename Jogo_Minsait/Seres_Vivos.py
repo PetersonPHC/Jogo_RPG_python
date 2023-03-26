@@ -1,6 +1,7 @@
-class seres_vivos:
+#classe dos seres vivos (PAI)
+class Seres_vivos:
     def __init__(self):
-        #ataque e vida do personagem
+        #ataque e vida do personagem(padrão)
         self.HP = 1000
         self.ataque = 100
 
@@ -10,7 +11,3 @@ class seres_vivos:
     def receber_ataque(self, saude, ataque):
         self.HP = saude - ataque
         return self.HP 
-
-print("*"*40)
-print("!!! O Jogo Começou !!!")
-print("*"*40)
